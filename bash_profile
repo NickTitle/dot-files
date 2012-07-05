@@ -1,16 +1,14 @@
 #Defined Functions
-gg(){ 
-		grep -ir $1 ./ 2> /dev/null 
-}
+gg(){ grep -ir $1 ./ 2> /dev/null; }
 
 cdc(){
 		client="Matchbox"
 		cd /Users/marpaia/Documents/iSEC/Clients/$client/$1
 }
 
-cdd(){
-		cd /Users/marpaia/Desktop/
-}
+cdd(){ cd /Users/marpaia/Desktop/; }
+
+
 
 #Application Aliases
 alias chrome="open /Applications/Google\ Chrome.app/"
@@ -85,13 +83,3 @@ PS1="$begin$white[$green$username$white@$red$hostname$white] $blue$currentDirect
 export LS_OPTIONS='--color=auto'
 export CLICOLOR='Yes'
 export LSCOLORS=''
-
-
-##
-# Your previous /Users/marpaia/.bash_profile file was backed up as /Users/marpaia/.bash_profile.macports-saved_2012-07-05_at_15:16:32
-##
-
-# MacPorts Installer addition on 2012-07-05_at_15:16:32: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
