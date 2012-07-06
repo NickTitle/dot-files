@@ -1,4 +1,6 @@
 #Defined Functions
+sundown(){ /Users/marpaia/github/sundown/sundown $1.html > $1.html; }
+
 ff(){ find ./ -name $1; }
 
 gg(){ grep -ir $1 ./ 2> /dev/null; }
