@@ -24,7 +24,7 @@ set laststatus=2
 set textwidth=80
 
 " set the bar to be at one character greater than the text width (81)
-set cc=+1
+" set cc=+1
 
 " turn on syntax highlighting
 syntax on
