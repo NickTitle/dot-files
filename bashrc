@@ -1,5 +1,8 @@
 #Defined Functions
-sundown(){ /Users/marpaia/github/sundown/sundown $1.mkd > $1.html; }
+sundown(){ 
+		echo '<link rel="stylesheet" type="text/css" href="file://localhost/Users/marpaia/github/sundown/bootstrap.css"/>' > $1.html
+		/Users/marpaia/github/sundown/sundown $1.mkd >> $1.html
+}
 
 ff(){ find ./ -name $1; }
 
