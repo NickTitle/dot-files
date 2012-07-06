@@ -1,4 +1,6 @@
 #Defined Functions
+ff(){ find ./ -name $1; }
+
 gg(){ grep -ir $1 ./ 2> /dev/null; }
 
 cdc(){
