@@ -15,7 +15,7 @@ cdc(){
 
 cdd(){ cd /Users/marpaia/Desktop/; }
 
-dja() { django-admin.py $1 $2; }
+cdg (){ cd /Users/marpaia/github/; }
 
 #Application Aliases
 alias chrome="open /Applications/Google\ Chrome.app/"
