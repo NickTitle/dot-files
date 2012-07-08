@@ -23,6 +23,7 @@ alias twitter="open /Applications/Twitter.app/"
 alias firefox="open /Applications/Firefox.app/"
 alias mail="open /Applications/Mail.app/"
 alias cal="open /Applications/iCal.app/"
+alias lock="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine"
 
 #Command Aliases
 alias ll="ls -l"
