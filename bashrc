@@ -15,10 +15,7 @@ cdc(){
 
 cdd(){ cd /Users/marpaia/Desktop/; }
 
-updatebash(){ 
-		rm /Users/marpaia/.bash_profile
-		ln /Users/marpaia/github/dotfiles/bashrc /Users/marpaia/.bash_profile
-}
+dja() { django-admin.py $1 $2; }
 
 #Application Aliases
 alias chrome="open /Applications/Google\ Chrome.app/"
@@ -36,6 +33,7 @@ alias cls="clear"
 export SVN_EDITOR=vim
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 #Define PS1
 username="\u";
@@ -95,21 +93,4 @@ PS1="$begin$white[$green$username$white@$red$hostname$white] $blue$currentDirect
 export LS_OPTIONS='--color=auto'
 export CLICOLOR='Yes'
 export LSCOLORS=''
-
-##
-# Your previous /Users/marpaia/.bash_profile file was backed up as /Users/marpaia/.bash_profile.macports-saved_2012-07-08_at_04:21:55
-##
-
-# MacPorts Installer addition on 2012-07-08_at_04:21:55: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-
-##
-# Your previous /Users/marpaia/.bash_profile file was backed up as /Users/marpaia/.bash_profile.macports-saved_2012-07-08_at_04:51:26
-##
-
-# MacPorts Installer addition on 2012-07-08_at_04:51:26: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
 
