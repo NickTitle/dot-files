@@ -32,6 +32,8 @@ syntax on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Function key maps                                                           "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Turning off the <F1> help
+:nmap <F1> <nop>
 
 " toggle NERDTree
 nmap <F1> :NERDTreeToggle<CR>
