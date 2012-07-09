@@ -53,6 +53,9 @@ map  <F5> :set number!<CR> :set foldcolumn=0<CR>
 " turn on spell checking
 map <F8> :set spell<CR>
 
+" write and make
+map <F9> :w<CR>:!make<CR>
+
 " jump to the beginning of the line
 map <F11> 0
 
