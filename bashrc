@@ -29,6 +29,7 @@ alias lock="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSav
 alias ll="ls -l"
 alias la="ls -a"
 alias cls="clear"
+alias l="!!"
 
 #System Definitions
 export SVN_EDITOR=vim
