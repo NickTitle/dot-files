@@ -51,19 +51,28 @@ map <F3> gt
 map <F4> <C-w><C-w> 
 
 " toggle line numbers
-map  <F5> :set number!<CR> :set foldcolumn=0<CR>
+map <F5> :set number!<CR> :set foldcolumn=0<CR>
+
+" word wrap
+map <F6> gwap
 
 " turn on spell checking
-map <F8> :set spell<CR>
+map <F7> :set spell<CR>
 
 " write and make
-map <F9> :w<CR>:!make<CR>
+map <F8> :w<CR>:!make<CR>
 
 " jump back one word
-map <F11> b
+map <F9> b
 
 " jump forward one wordd
-map <F12> w
+map <F10> w
+
+" jump to the beginning of the line
+map <F11> 0
+
+" jump to the end of the line
+map <F12> $
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indentation and spacing                                                     "
