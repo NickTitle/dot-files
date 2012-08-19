@@ -1,17 +1,8 @@
 #Defined Functions
-sundown(){ 
-		echo '<link rel="stylesheet" type="text/css" href="file://localhost/Users/marpaia/github/sundown/bootstrap.css"/>' > $1.html
-		/Users/marpaia/github/sundown/sundown $1.mkd >> $1.html
-}
 
 ff(){ find ./ -name $1; }
 
 gg(){ grep -ir $1 ./ 2> /dev/null; }
-
-cdc(){
-		client="Matchbox"
-		cd /Users/marpaia/Documents/iSEC/Clients/$client/$1
-}
 
 cdd(){ cd /Users/marpaia/Desktop/; }
 
@@ -29,7 +20,6 @@ alias lock="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSav
 alias ll="ls -l"
 alias la="ls -a"
 alias cls="clear"
-alias l="!!"
 
 #System Definitions
 export SVN_EDITOR=vim
