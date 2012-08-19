@@ -33,7 +33,7 @@ set textwidth=80
 syntax on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Function key maps                                                           "
+" Key maps                                                           "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Turning off the <F1> help
 :nmap <F1> <nop>
@@ -59,11 +59,14 @@ map <F8> :set spell<CR>
 " write and make
 map <F9> :w<CR>:!make<CR>
 
-" jump to the beginning of the line
-map <F11> 0
+" jump back one word
+map <F11> b
 
-" jump to the end of the line
-map <F12> $
+" jump forward one wordd
+map <F12> w
+
+" mapping word wrap
+map ** gwap
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indentation and spacing                                                     "
@@ -77,3 +80,12 @@ set autoindent
 
 " tabstop changes the width of the tab character
 set tabstop=4
+
+" expandtab inserts spaces whenever the tab key is pressed
+set expandtab
+
+" shiftwidth changes the number of space characters inserted for indentation
+set shiftwidth=4
+
+" softtabstop makes the backspace key treat the four spaces like a tab
+set softtabstop=4
