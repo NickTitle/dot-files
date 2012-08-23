@@ -19,6 +19,9 @@ alias lock="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSav
 #Command Aliases
 alias ll="ls -l"
 alias la="ls -a"
+alias lla="ls -la"
+alias lal="la -al"
+alias l="ls"
 alias cls="clear"
 
 #System Definitions
