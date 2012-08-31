@@ -28,7 +28,7 @@ alias cls="clear"
 export SVN_EDITOR=vim
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/Users/marpaia/bin:$PATH
 
 #Define PS1
 username="\u";
