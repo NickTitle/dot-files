@@ -41,14 +41,14 @@ syntax on
 " toggle NERDTree
 nmap <F1> :NERDTreeToggle<CR>
 
+" switch between NERDTree and the open file
+map <F2> <C-w><C-w> 
+
 " tab left
-map <F2> gT
+map <F3> gT
 
 " tab right
-map <F3> gt
-
-" switch between NERDTree and the open file
-map <F4> <C-w><C-w> 
+map <F4> gt
 
 " toggle line numbers
 map <F5> :set number!<CR> :set foldcolumn=0<CR>
