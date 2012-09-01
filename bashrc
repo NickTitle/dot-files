@@ -8,16 +8,6 @@ cdd(){ cd /Users/marpaia/Desktop/; }
 
 cdg (){ cd /Users/marpaia/github/; }
 
-udot (){
-    curl https://raw.github.com/marpaia/dot-files/master/gitconfig > /Users/marpaia/.gitconfig
-    curl https://raw.github.com/marpaia/dot-files/bashrc > /Users/marpaia/.bash_profile
-    curl https://raw.github.com/marpaia/dot-files/vimrc > /Users/marpaia/.vimrc
-}
-
-uvim (){
-    curl https://raw.github.com/marpaia/dot-files/vimrc > /Users/marpaia/.vimrc
-}
-
 #Application Aliases
 alias chrome="open /Applications/Google\ Chrome.app/"
 alias twitter="open /Applications/Twitter.app/"
