@@ -6,7 +6,7 @@ gg(){ grep -ir $1 ./ 2> /dev/null; }
 
 cdd(){ cd /Users/marpaia/Desktop/; }
 
-cdg (){ cd /Users/marpaia/github/; }
+cdg(){ cd /Users/marpaia/github/; }
 
 #Application Aliases
 alias chrome="open /Applications/Google\ Chrome.app/"
@@ -23,6 +23,13 @@ alias lla="ls -la"
 alias lal="la -al"
 alias l="ls"
 alias cls="clear"
+alias pythong="python"
+alias p="python"
+
+#Color Listings
+export LS_OPTIONS='--color=auto'
+export CLICOLOR='Yes'
+export LSCOLORS=''
 
 #System Definitions
 export SVN_EDITOR=vim
@@ -83,9 +90,3 @@ PS1="$begin$white[$green$username$white@$red$hostname$white] $blue$currentDirect
 #\\ : a backslash
 #\[ : begin a sequence of non-printing characters, which could be used to embed a terminal control sequence into the prompt
 #\] : end a sequence of non-printing characters
-
-#Color Listings
-export LS_OPTIONS='--color=auto'
-export CLICOLOR='Yes'
-export LSCOLORS=''
-
