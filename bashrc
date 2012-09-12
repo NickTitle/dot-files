@@ -2,7 +2,7 @@
 
 ff(){ find ./ -name $1; }
 
-gg(){ grep -ir $1 ./ 2> /dev/null; }
+gg(){ eval 'grep -irn "'"$@"'" ./ 2> /dev/null | grep -v "Binary file";'; }
 
 cdd(){ cd /Users/marpaia/Desktop/; }
 
