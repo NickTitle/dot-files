@@ -8,6 +8,15 @@
 " NERDTree
 " https://github.com/scrooloose/nerdtree
 
+" exuberant ctags
+" http://ctags.sourceforge.net/
+
+" cscope
+" sudo port install cscope
+" http://cscope.sourceforge.net/ (project web page)
+" http://cscope.sourceforge.net/cscope_maps.vim (add to ~/.vim/bundle/)
+" vim tutorial: http://cscope.sourceforge.net/cscope_vim_tutorial.html
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General viewing                                                             "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -73,6 +82,9 @@ map <F11> 0
 
 " jump to the end of the line
 map <F12> $
+
+" jump back to declaration
+map <C-o> <C-T>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indentation and spacing                                                     "
