@@ -25,6 +25,7 @@ alias l="ls"
 alias cls="clear"
 alias pythong="python"
 alias p="python"
+alias mak="make"
 
 #Color Listings
 export LS_OPTIONS='--color=auto'
