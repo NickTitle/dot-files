@@ -2,7 +2,7 @@
 
 ff(){ find ./ -name $1; }
 
-gg(){ eval 'grep -irn "'"$@"'" ./ 2> /dev/null | grep -v "Binary file";'; }
+gg(){ eval 'grep -irnI "'"$@"'" ./ 2> /dev/null'; }
 
 cdd(){ cd /Users/marpaia/Desktop/; }
 
@@ -10,11 +10,13 @@ cdg(){ cd /Users/marpaia/github/; }
 
 #Application Aliases
 alias chrome="open /Applications/Google\ Chrome.app/"
-alias twitter="open /Applications/Twitter.app/"
+alias twitter="open /Applications/Tweetbot.app/"
 alias firefox="open /Applications/Firefox.app/"
 alias mail="open /Applications/Mail.app/"
 alias cal="open /Applications/iCal.app/"
+alias ical="open /Applications/iCal.app/"
 alias lock="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine"
+alias burp="nohup java -jar -Xmx1g /Users/marpaia/Tools/burp.jar > /dev/null&"
 
 #Command Aliases
 alias ll="ls -l"
@@ -24,8 +26,14 @@ alias lal="la -al"
 alias l="ls"
 alias cls="clear"
 alias pythong="python"
-alias p="python"
+alias p="python -c"
 alias mak="make"
+alias s="ssh vm"
+alias vm="ssh vm"
+alias sec="ssh sec"
+alias sec03="ssh sec03"
+alias urlencode='python -c "import urllib, sys ; print urllib.quote_plus(sys.stdin.read())";'
+alias ios="open /Users/marpaia/Mobile/iOS/Etsy.xcodeproj"
 
 #Color Listings
 export LS_OPTIONS='--color=auto'

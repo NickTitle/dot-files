@@ -33,7 +33,7 @@ set statusline=%F%m%r%h%w\ [POS=%l,%v]\ [%p%%]\ [LEN=%L]\ [FORMAT=%{&ff}]\ [TYPE
 set laststatus=2
 
 " set the text width to be 80 characters
-set textwidth=80
+" set textwidth=80
 
 " set the bar to be at one character greater than the text width (81)
 " set cc=+1
@@ -84,7 +84,7 @@ map <F11> 0
 map <F12> $
 
 " jump back to declaration
-map <C-o> <C-T>
+map <c-O> <c-t>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Indentation and spacing                                                     "
