@@ -20,6 +20,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General viewing                                                             "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" fix backspace
+set backspace=start,eol,indent
+
 " make it prettier
 set background=dark
 
