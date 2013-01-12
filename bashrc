@@ -103,7 +103,8 @@ export LANG="$LC_ALL"
 #Define PS1
 username="\u";
 hostname="\h";
-currentDirectory="\w";
+fullDirectory="\w";
+currentDirectory="\W";
 grey="\[\033[30m\]";
 red="\[\033[31m\]";
 green="\[\033[32m\]";
@@ -114,7 +115,7 @@ begin="\[\033[G\]";
 end="\[\033[0m\]";
 
 #PS1="$begin$white[$green$username$white@$red$hostname$white] $blue$currentDirectory$green\$(parse_git_branch)$red:$end";
-PS1="$blue$currentDirectory$green\$(parse_git_branch)$red:$end";
+PS1="$blue$fullDirectory$green\$(parse_git_branch)$red:$end";
 
 #PS1 Colors
 #Black       0;30     Dark Gray     1;30
