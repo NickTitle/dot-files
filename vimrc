@@ -8,6 +8,9 @@
 " NERDTree
 " https://github.com/scrooloose/nerdtree
 
+" vim fugitive
+" https://github.com/tpope/vim-fugitive
+
 " exuberant ctags
 " http://ctags.sourceforge.net/
 
