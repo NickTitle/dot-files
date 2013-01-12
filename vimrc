@@ -32,8 +32,18 @@ set background=dark
 " pathogen
 call pathogen#infect()
 
-" set the status line to display some useful info
-set statusline=%F%m%r%h%w\ [POS=%l,%v]\ [%p%%]\ [LEN=%L]\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [HEX=\%02.2B]
+"Git branch
+function! GitBranch()
+    let branch = system("git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* //'")
+    if branch != ''
+        return '(' . substitute(branch, '\n', '', 'g') . ')'
+    en
+    return ''
+endfunction
+
+" Format the statusline
+set statusline=%F%m%r%h%w\%{GitBranch()}\ [LINE=%l(%v)]\ [%p%%]\ [LEN=%L]\ [FORMAT=%{&ff}]\ [TYPE=%Y]
+" set statusline=%F%m%r%h%w\ [POS=%l,%v]\ [%p%%]\ [LEN=%L]\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [HEX=\%02.2B]
 
 " makes sure the status line displays automatically
 set laststatus=2
@@ -76,6 +86,9 @@ set ignorecase
 
 " Highlight search results
 set hlsearch
+
+" Automatically display line number
+set number
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key maps                                                                    "
