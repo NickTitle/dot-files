@@ -60,7 +60,7 @@ set foldnestmax=10
 set nofoldenable
 
 " set the foldlevel
-set foldlevel=1
+" set foldlevel=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key maps                                                                    "
