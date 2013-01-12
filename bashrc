@@ -1,12 +1,16 @@
 #Defined Functions
 
-ff(){ find ./ -name $1; }
+ff(){ find ./ -name *$1*; }
 
-gg(){ eval 'grep -irnI "'"$@"'" ./ 2> /dev/null'; }
+gg(){ eval 'grep -irnI --color "'"$@"'" ./ 2> /dev/null'; }
 
 cdd(){ cd /Users/marpaia/Desktop/; }
 
 cdg(){ cd /Users/marpaia/github/; }
+
+parse_git_branch() { 
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/' 
+}
 
 #Application Aliases
 alias chrome="open /Applications/Google\ Chrome.app/"
@@ -17,6 +21,9 @@ alias cal="open /Applications/iCal.app/"
 alias ical="open /Applications/iCal.app/"
 alias lock="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine"
 alias burp="nohup java -jar -Xmx1g /Users/marpaia/Tools/burp.jar > /dev/null&"
+alias w="weechat-curses"
+alias weechat="weechat-curses"
+
 
 #Command Aliases
 alias ll="ls -l"
@@ -33,33 +40,40 @@ alias vm="ssh vm"
 alias sec="ssh sec"
 alias sec03="ssh sec03"
 alias urlencode='python -c "import urllib, sys ; print urllib.quote_plus(sys.stdin.read())";'
-alias ios="open /Users/marpaia/Mobile/iOS/Etsy.xcodeproj"
+alias ios="open /Users/marpaia/Documents/Mobile/iOS/Etsy.xcodeproj"
+alias bashrc="vim ~/.bash_profile"
+alias showall="defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder"
+alias hideall="defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder"
 
 #Color Listings
 export LS_OPTIONS='--color=auto'
 export CLICOLOR='Yes'
 export LSCOLORS=''
+export GREP_OPTIONS='--color=auto'
 
 #System Definitions
 export SVN_EDITOR=vim
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
 export PATH=/opt/local/bin:/opt/local/sbin:/Users/marpaia/bin:$PATH
+export LC_ALL=en_US.utf-8
+export LANG="$LC_ALL"
 
 #Define PS1
 username="\u";
 hostname="\h";
 currentDirectory="\W";
-grey="\[\033[1;30m\]";
-red="\[\033[1;31m\]";
-green="\[\033[1;32m\]";
-blue="\[\033[1;34m\]";
-white="\[\033[1;37m\]";
-purple="\[\033[1;35m\]";
+grey="\[\033[30m\]";
+red="\[\033[31m\]";
+green="\[\033[32m\]";
+blue="\[\033[34m\]";
+white="\[\033[37m\]";
+purple="\[\033[35m\]";
 begin="\[\033[G\]";
 end="\[\033[0m\]";
 
-PS1="$begin$white[$green$username$white@$red$hostname$white] $blue$currentDirectory$red:$end";
+#PS1="$begin$white[$green$username$white@$red$hostname$white] $blue$currentDirectory$green\$(parse_git_branch)$red:$end";
+PS1="$blue$currentDirectory$green\$(parse_git_branch)$red:$end";
 
 #PS1 Colors
 #Black       0;30     Dark Gray     1;30
