@@ -103,7 +103,7 @@ export LANG="$LC_ALL"
 #Define PS1
 username="\u";
 hostname="\h";
-currentDirectory="\W";
+currentDirectory="\w";
 grey="\[\033[30m\]";
 red="\[\033[31m\]";
 green="\[\033[32m\]";
