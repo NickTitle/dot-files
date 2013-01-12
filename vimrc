@@ -44,11 +44,29 @@ set laststatus=2
 " turn on syntax highlighting
 syntax on
 
+" set terminal title to file name
+set title
+
+" set colorscheme
+colorscheme evening
+
+" fold based on indent
+set foldmethod=indent
+
+" deepest fold is 10 levels
+set foldnestmax=10
+
+" dont fold by default
+set nofoldenable
+
+" set the foldlevel
+set foldlevel=1
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key maps                                                                    "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Turning off the <F1> help
-:nmap <F1> <nop>
+nmap <F1> <nop>
 
 " toggle NERDTree
 nmap <F1> :NERDTreeToggle<CR>
