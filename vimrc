@@ -62,6 +62,18 @@ set nofoldenable
 " set the foldlevel
 " set foldlevel=1
 
+" Set to auto read when a file is changed from the outside
+set autoread
+
+" Set 7 lines to the cursor - when moving vertically using j/k
+set so=7
+
+" Ignore case when searching
+set ignorecase
+
+" Highlight search results
+set hlsearch
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key maps                                                                    "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
