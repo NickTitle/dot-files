@@ -61,7 +61,7 @@ syntax on
 set title
 
 " set colorscheme
-colorscheme evening
+" colorscheme evening
 
 " fold based on indent
 set foldmethod=indent
