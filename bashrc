@@ -4,9 +4,9 @@ ff(){ find ./ -name *$1*; }
 
 gg(){ eval 'grep -irnI --color "'"$@"'" ./ 2> /dev/null'; }
 
-cdd(){ cd /Users/marpaia/Desktop/; }
+cdd(){ cd ~/Desktop/; }
 
-cdg(){ cd /Users/marpaia/github/; }
+cdg(){ cd ~/github/; }
 
 function swap()
 { # Swap 2 filenames around, if they exist (from Uzi's bashrc).
@@ -62,7 +62,7 @@ alias mail="open /Applications/Mail.app/"
 alias cal="open /Applications/iCal.app/"
 alias ical="open /Applications/iCal.app/"
 alias lock="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine"
-alias burp="nohup java -jar -Xmx1g /Users/marpaia/Tools/burp.jar > /dev/null&"
+alias burp="nohup java -jar -Xmx1g ~/Tools/burp.jar > /dev/null&"
 alias w="weechat-curses"
 alias weechat="weechat-curses"
 
@@ -82,7 +82,7 @@ alias vm="ssh vm"
 alias sec="ssh sec"
 alias sec03="ssh sec03"
 alias urlencode='python -c "import urllib, sys ; print urllib.quote_plus(sys.stdin.read())";'
-alias ios="open /Users/marpaia/Documents/Mobile/iOS/Etsy.xcodeproj"
+alias ios="open ~/Documents/Mobile/iOS/Etsy.xcodeproj"
 alias showall="defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder"
 alias hideall="defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder"
 
@@ -96,7 +96,7 @@ export GREP_OPTIONS='--color=auto'
 export SVN_EDITOR=vim
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
-export PATH=/opt/local/bin:/opt/local/sbin:/Users/marpaia/bin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:~/bin:$PATH
 export LC_ALL=en_US.utf-8
 export LANG="$LC_ALL"
 
