@@ -8,7 +8,7 @@ cdd(){ cd ~/Desktop/; }
 
 cdg(){ cd ~/github/; }
 
-dope(){ echo "no doubt" }
+dope(){ echo "no doubt"; }
 
 function swap()
 { # Swap 2 filenames around, if they exist (from Uzi's bashrc).
