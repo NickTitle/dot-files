@@ -11,6 +11,9 @@
 " vim fugitive
 " https://github.com/tpope/vim-fugitive
 
+" ctl-p
+" https://github.com/kien/ctrlp.vim
+
 " exuberant ctags
 " http://ctags.sourceforge.net/
 
@@ -89,6 +92,9 @@ set hlsearch
 
 " Automatically display line number
 set number
+
+" faster find for ctl-p
+let g:ctrlp_user_command = 'find %s -type f'  
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key maps                                                                    "
