@@ -96,6 +96,9 @@ set number
 " faster find for ctl-p
 let g:ctrlp_user_command = 'find %s -type f'  
 
+" set ignore directories for ctl-p
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key maps                                                                    "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -123,8 +126,8 @@ map <F6> gwap
 " turn on spell checking
 map <F7> :set spell<CR>
 
-" write and make
-map <F8> :w<CR>:!make<CR>
+" ctl-p
+map <F8> <C-p>
 
 " jump back one word
 map <F9> b
