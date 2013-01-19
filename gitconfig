@@ -1,23 +1,22 @@
 [user]
-	name = Mike Arpaia
-	email = mike@arpaia.co
+    name = Mike Arpaia
+    email = mike@arpaia.co
 [alias]
-	st = status
-	tags = tag
-	branches = branch
-	ci = commit
-	co = checkout
-	br = branch
-	wu = log --stat origin..@{0}
+    st = status
+    tags = tag
+    branches = branch
+    ci = commit
+    co = checkout
+    br = branch
+    wu = log --stat origin..@{0}
     tree = log --graph --decorate --pretty=oneline --abbrev-commit
 [color]
-	# enable color for any interactive command-line output
-	ui = auto
+    # enable color for any interactive command-line output
+    ui = auto
 [core]
-	# User-wide ignore file (equivalent to SVN's global-ignores):
-	excludesfile = ~/.gitignore
-	# -F disables paging in less if the content fits on one screen:
-	pager = less -FRSX --shift 5
+    # User-wide ignore file (equivalent to SVN's global-ignores):
+    excludesfile = ~/.gitignore
+    # -F disables paging in less if the content fits on one screen:
+    pager = less -FRSX --shift 5
 [merge]
     tool = opendiff
-
