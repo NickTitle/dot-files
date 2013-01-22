@@ -126,8 +126,9 @@ map <F6> gwap
 " turn on spell checking
 map <F7> :set spell<CR>
 
-" ctl-p
-map <F8> <C-p>
+" run the file
+au BufEnter,BufNew *.php map <F8> :!clear && php %<CR>
+au BufEnter,BufNew *.py map <F8> :!clear && python %<CR>
 
 " jump back one word
 map <F9> b
