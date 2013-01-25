@@ -10,13 +10,13 @@
     br = branch
     wu = log --stat origin..@{0}
     tree = log --graph --decorate --pretty=oneline --abbrev-commit
+    rpull = pull --rebase --stat
+    pullr = pull --rebase
+    unstage = reset
 [color]
-    # enable color for any interactive command-line output
     ui = auto
 [core]
-    # User-wide ignore file (equivalent to SVN's global-ignores):
     excludesfile = ~/.gitignore
-    # -F disables paging in less if the content fits on one screen:
     pager = less -FRSX --shift 5
 [merge]
     tool = opendiff
