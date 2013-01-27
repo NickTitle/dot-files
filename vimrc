@@ -37,7 +37,8 @@ call pathogen#infect()
 
 "Git branch
 function! GitBranch()
-    let branch = system("git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* //'")
+    "let branch = system("git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* //'"`I)
+    let branch = system("git branch | grep '*' | awk '{print $2}'")
     if branch != ''
         return '(' . substitute(branch, '\n', '', 'g') . ')'
     en
