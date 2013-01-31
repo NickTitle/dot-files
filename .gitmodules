@@ -1,0 +1,3 @@
+[submodule "dot-files-etsy"]
+	path = dot-files-etsy
+	url = https://github.etsycorp.com/marpaia/dot-files-etsy.git
