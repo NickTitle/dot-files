@@ -97,9 +97,8 @@ export GREP_OPTIONS='--color=auto'
 
 #System Definitions
 export SVN_EDITOR=vim
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export MANPATH=/opt/local/share/man:$MANPATH
-export PATH=/opt/local/bin:/opt/local/sbin:~/bin:$PATH
+export PATH=~/Tools/casper/bin:/opt/local/bin:/opt/local/sbin:~/bin:$PATH
 export LC_ALL=en_US.utf-8
 export LANG="$LC_ALL"
 

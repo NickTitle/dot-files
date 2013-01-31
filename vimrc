@@ -100,6 +100,9 @@ let g:ctrlp_user_command = 'find %s -type f'
 " set ignore directories for ctl-p
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 
+" PHP auto-complete
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key maps                                                                    "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -128,8 +131,8 @@ map <F6> gwap
 map <F7> :set spell<CR>
 
 " run the file
-au BufEnter,BufNew *.php map <F8> :!clear && php %<CR>
-au BufEnter,BufNew *.py map <F8> :!clear && python %<CR>
+au BufEnter,BufNew *.php map <F8> :w<CR>:!clear && php %<CR>
+au BufEnter,BufNew *.py map <F8> :w<CR>:!clear && python %<CR>
 
 " jump back one word
 map <F9> b
