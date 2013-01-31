@@ -85,7 +85,7 @@ alias vm="ssh vm"
 alias sec="ssh sec"
 alias sec03="ssh sec03"
 alias urlencode='python -c "import urllib, sys ; print urllib.quote_plus(sys.stdin.read())";'
-alias ios="open ~/Documents/Mobile/iOS/Etsy.xcodeproj"
+alias ios="open ~/github/iOS/Etsy.xcodeproj"
 alias showall="defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder"
 alias hideall="defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder"
 
