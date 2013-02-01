@@ -1,3 +1,6 @@
+#Etsy Submodule
+if [ -f ~/github/dot-files/dot-files-etsy/bashrc ]; then . ~/github/dot-files/dot-files-etsy/bashrc; fi
+
 #Defined Functions
 
 ff(){ find ./ -name *$1*; }
