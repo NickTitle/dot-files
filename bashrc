@@ -1,7 +1,3 @@
-#Source Things
-if [ -f ~/github/dot-files/dot-files-etsy/bashrc ]; then . ~/github/dot-files/dot-files-etsy/bashrc; fi
-source ~/github/dot-files/git-completion.bash
-
 #Defined Functions
 
 ff(){ find ./ -name *$1*; }
@@ -156,3 +152,7 @@ PS1="$blue$fullDirectory$green\$(parse_git_branch)$red:$end";
 #\\ : a backslash
 #\[ : begin a sequence of non-printing characters, which could be used to embed a terminal control sequence into the prompt
 #\] : end a sequence of non-printing characters
+
+#Source Things
+if [ -f ~/github/dot-files/dot-files-etsy/bashrc ]; then . ~/github/dot-files/dot-files-etsy/bashrc; fi
+source ~/github/dot-files/git-completion.bash
