@@ -96,7 +96,7 @@ export GREP_OPTIONS='--color=auto'
 #System Definitions
 export SVN_EDITOR=vim
 export MANPATH=/opt/local/share/man:$MANPATH
-export PATH=~/Tools/casper/bin:/opt/local/bin:/opt/local/sbin:~/bin:$PATH
+export PATH=~/pear/bin:/usr/local/mysql/bin:~/Tools/casper/bin:/opt/local/bin:/opt/local/sbin:~/bin:$PATH
 export LC_ALL=en_US.utf-8
 export LANG="$LC_ALL"
 source ~/github/dot-files/git-completion.bash
