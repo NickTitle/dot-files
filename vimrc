@@ -3,25 +3,25 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " vim pathogen
-" https://github.com/tpope/vim-pathogen
+"   https://github.com/tpope/vim-pathogen
 
 " NERDTree
-" https://github.com/scrooloose/nerdtree
+"   https://github.com/scrooloose/nerdtree
 
 " vim fugitive
-" https://github.com/tpope/vim-fugitive
+"   https://github.com/tpope/vim-fugitive
 
 " ctl-p
-" https://github.com/kien/ctrlp.vim
+"   https://github.com/kien/ctrlp.vim
 
 " exuberant ctags
-" http://ctags.sourceforge.net/
+"   http://ctags.sourceforge.net/
 
 " cscope
-" sudo port install cscope
-" http://cscope.sourceforge.net/ (project web page)
-" http://cscope.sourceforge.net/cscope_maps.vim (add to ~/.vim/bundle/)
-" vim tutorial: http://cscope.sourceforge.net/cscope_vim_tutorial.html
+"   sudo port install cscope
+"   http://cscope.sourceforge.net/ (project web page)
+"   http://cscope.sourceforge.net/cscope_maps.vim (add to ~/.vim/bundle/)
+"   vim tutorial: http://cscope.sourceforge.net/cscope_vim_tutorial.html
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General viewing                                                             "
@@ -67,18 +67,6 @@ set title
 " set colorscheme
 " colorscheme evening
 
-" fold based on indent
-set foldmethod=indent
-
-" deepest fold is 10 levels
-set foldnestmax=10
-
-" dont fold by default
-set nofoldenable
-
-" set the foldlevel
-" set foldlevel=1
-
 " Set to auto read when a file is changed from the outside
 set autoread
 
@@ -99,6 +87,22 @@ let g:ctrlp_user_command = 'find %s -type f'
 
 " set ignore directories for ctl-p
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General code writing                                                        "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" fold based on indent
+set foldmethod=indent
+
+" deepest fold is 10 levels
+set foldnestmax=10
+
+" dont fold by default
+set nofoldenable
+
+" set the foldlevel
+" set foldlevel=1
 
 " PHP auto-complete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
@@ -133,6 +137,7 @@ map <F7> :set spell<CR>
 " run the file
 au BufEnter,BufNew *.php map <F8> :w<CR>:!clear && php %<CR>
 au BufEnter,BufNew *.py map <F8> :w<CR>:!clear && python %<CR>
+au BufEnter,BufNew *.rb map <F8> :w<CR>:!clear && ruby %<CR>
 
 " jump back one word
 map <F9> b

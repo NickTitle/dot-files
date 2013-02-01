@@ -1,5 +1,6 @@
-#Etsy Submodule
+#Source Things
 if [ -f ~/github/dot-files/dot-files-etsy/bashrc ]; then . ~/github/dot-files/dot-files-etsy/bashrc; fi
+source ~/github/dot-files/git-completion.bash
 
 #Defined Functions
 
@@ -87,19 +88,18 @@ alias urlencode='python -c "import urllib, sys ; print urllib.quote_plus(sys.std
 alias showall="defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder"
 alias hideall="defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder"
 
-#Color Listings
+#Colors
 export LS_OPTIONS='--color=auto'
 export CLICOLOR='Yes'
 export LSCOLORS=''
 export GREP_OPTIONS='--color=auto'
 
-#System Definitions
+#Environment Variables
 export SVN_EDITOR=vim
 export MANPATH=/opt/local/share/man:$MANPATH
 export PATH=~/pear/bin:/usr/local/mysql/bin:~/Tools/casper/bin:/opt/local/bin:/opt/local/sbin:~/bin:$PATH
 export LC_ALL=en_US.utf-8
 export LANG="$LC_ALL"
-source ~/github/dot-files/git-completion.bash
 
 #Define PS1
 username="\u";
