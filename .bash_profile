@@ -1,36 +1,6 @@
-
-# Setting PATH for Python 2.7
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
-
-PATH="/usr/local/bin:${PATH}"
-export PATH
-
-statbox(){ 
-pushd ~/Desktop/projects/analytics/;
-ssh -i NickEspo.pem ubuntu@ec2-23-22-245-10.compute-1.amazonaws.com;
-popd
- }
-
-cdd(){ cd ~/Desktop/; }
-
-cdg(){ cd ~/github/; }
-
-cdp(){ cd ~/Desktop/projects/; }
-
-cdr(){ cd ~/Desktop/projects/rails/; }
-
-cdx(){ cd ~/Desktop/projects/XcodeProjects/; }
-
-ga(){ git add -A ; }
-
-gs(){ git status ; }
-
-pull() { git pull ; }
-
-push() { git push origin master ; }
-
+export PATH=/usr/local/bin:$PATH
+alias lh="lame -h -b320"
+alias NT-$1="~/Dropbox/TitleTime/NewTitle/$1"
 function extract()      # Handy Extract Program
 {
     if [ -f $1 ] ; then
@@ -53,20 +23,19 @@ function extract()      # Handy Extract Program
     fi
 }
 
-
-# Creates an archive (*.tar.gz) from given directory.
-function maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
-
-# Create a ZIP archive of a file or folder.
-function makezip() { zip -r "${1%%/}.zip" "$1" ; }
-
 parse_git_branch() { 
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/' 
 }
 
-#Application Aliases
-alias lock="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine"
-alias l="ls"
+function c_comp_and_run() {
+			echo "$1 compiled - run $1.exe"
+			gcc $1.c -o $1.exe && ./$1.exe 
+}
+
+function g() {
+    grep -C2 -r -i -n --color=auto "$1" $2
+}
+
 
 username="\u";
 hostname="\h";
@@ -82,6 +51,7 @@ begin="\[\033[G\]";
 end="\[\033[0m\]";
 
 PS1="$blue$currentDirectory$green\$(parse_git_branch)$end :";
+#PS1="$blue$fullDirectory$green\$(parse_git_branch)$red:$end&#955";
 
 #PS1 Colors
 #Black       0;30     Dark Gray     1;30
@@ -121,3 +91,7 @@ PS1="$blue$currentDirectory$green\$(parse_git_branch)$end :";
 #\\ : a backslash
 #\[ : begin a sequence of non-printing characters, which could be used to embed a terminal control sequence into the prompt
 #\] : end a sequence of non-printing characters
+
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
